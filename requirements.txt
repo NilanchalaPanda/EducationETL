@@ -1,0 +1,11 @@
+pyspark
+pandas
+matplotlib
+seaborn
+plotly
+fastapi
+uvicorn
+watchdog
+sqlalchemy
+psycopg2-binary
+python-dotenv
