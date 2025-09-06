@@ -156,7 +156,7 @@ def create_star_schema(df: DataFrame, spark: SparkSession):
                    .join(dim_location, on="college_location", how="left") \
                    .select(
                        "student_id", "age", "department", "midterm_score", "final_score",
-                       "attendance", "average_score", "grade", "institute_id", "location_id"
+                       "attendance", "average_score", "grade", "institute_id", "location_id", "college_name", "college_location"
                    ) \
                    .withColumn("fact_id", monotonically_increasing_id())
 
